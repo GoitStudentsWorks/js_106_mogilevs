@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAClUExURUdwTBwcIBAQIBweIBsdIBkdIBwdIBsdIBseIB0dIB0dIBwdIBwdIBwcIB0dIBweICAgIBAgIBweIBwcIBscIBweIBwcIB0eIBseIB0dIBweIBsbIBwdIPr6+jg5O+zs7CorLjc5O97e34uLjVRUVtDQ0aenqEZHSVNUVqanqH1+f4uMjZmZm2FiZMLDw1NUV97e3rS1tVRVVkVGScLCw5mZmm9wceQiYvoAAAAcdFJOUwDPEG9gUO/fX6/fsK9/UO8QEM+QkICAj3CPf3CrBhKqAAAA+ElEQVRIx+2WyRbCIAxFqbZineeRAG21dZ71/z/NaI/DShMXrvoWsHn3JBAOiRA35fIVqT7KqRTFS15BESSfSF8RNUr9VUXW8OZ3FUMeApIDFHK8AEqNhc8DyqLFA6RQTGXAz4CNonQ7EgENkG4TBhCESwQWYUAFbAwGQjgl9JQSA3Chp2SXxmCMOT0lc05gEoEmp6Tvt2Q51xrEB14d6JVmAPFugeuWDqxgisecw4YKaKzufgowI59BoxvMmvO87Uxnn8D/AcnzO/yGMuABRdGoc/wl7KI1XgBUm+7vpqNAj+rvPIYNt0Rq6t7bPOP6zpd26+ebd+cVJlD0Bmvh1asAAAAASUVORK5CYII=" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fullstack developer Lloyd Jefferson create websites"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Jefferson</title>
+    
+    <script type="module" crossorigin src="/js_106_mogilevs/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_106_mogilevs/assets/vendor-267a759b.js">
+    <link rel="stylesheet" href="/js_106_mogilevs/assets/vendor-e9475c75.css">
+    <link rel="stylesheet" href="/js_106_mogilevs/assets/index-aa074a72.css">
+  </head>
+  <body>
+    <header class="header" id="header-id">
+  <div class="container header-section">
+    <a href="./index.html" class="home-link">
+      <picture>
+        <source
+          srcset="/js_106_mogilevs/assets/jefferson-photo-min-5588c7d5.jpg 2x, /js_106_mogilevs/assets/jefferson-photo-min-5588c7d5.jpg 1x"
+        />
+        <img src="/js_106_mogilevs/assets/jefferson-photo-min-5588c7d5.jpg" alt="me" class="jeff-photo" />
+      </picture>
+      <span class="logo-link-text"> jefferson* </span>
+    </a>
+
+    <button type="button" class="mob-menu-open-btn" aria-label="open-menu">
+      <svg class="mob-menu-open-btn-icon" width="28" height="28">
+        <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <div class="drop-menu">
+      <button type="button" class="header-menu">Menu</button>
+      <nav class="drop-menu-nav">
+        <ul class="drop-menu-list">
+          <li class="drop-menu-item">
+            <a href="#aboutme-id" class="drop-menu-link">About me</a>
+          </li>
+          <li class="drop-menu-item">
+            <a href="#benefits" class="drop-menu-link"> Benefits </a>
+          </li>
+          <li class="drop-menu-item">
+            <a href="#projects" class="drop-menu-link"> Projects </a>
+          </li>
+          <li class="drop-menu-item">
+            <a href="#faq-section-id" class="drop-menu-link"> FAQ </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#work-together" class="order-btn">Order the project</a>
+  </div>
+</header>
+<div class="mob-menu">
+  <button type="button" class="mob-menu-close-btn" aria-label="close-menu">
+    <svg class="mob-menu-close-btn-icon" width="28" height="28">
+      <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="mob-menu-nav">
+    <ul class="mob-menu-list">
+      <li class="mob-menu-item">
+        <a href="#aboutme-id" class="mob-menu-link">About me</a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#benefits" class="mob-menu-link"> Benefits </a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#projects" class="mob-menu-link"> Projects </a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#faq-section-id" class="mob-menu-link"> FAQ </a>
+      </li>
+    </ul>
+  </nav>
+  <a href="#work-together" class="mob-order-btn">Order the project</a>
+</div>
+
+    <section class="hero">
+  <div class="glass">
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+    <div class="glass-effect"></div>
+  </div>
+  <div class="container">
+    <div class="hero-wrap">
+      <h1 class="hero-title">
+        Hello.<br />I’m Fullstack developer<br />Lloyd Jefferson.
+      </h1>
+      <ul class="hero-list">
+        <li class="hero-list-item">
+          <a
+            class="hero-social-link hero-instagram"
+            href="https://www.instagram.com/goitclub/"
+            target="blank_"
+            >IG</a
+          >
+        </li>
+        <li class="hero-list-item">
+          <a
+            class="hero-social-link hero-facebook"
+            href="https://www.facebook.com/goITclub/"
+            target="blank_"
+            >FB</a
+          >
+        </li>
+        <li class="hero-list-item">
+          <a
+            class="hero-social-link hero-youtube"
+            href="https://www.youtube.com/c/GoIT"
+            target="blank_"
+            >YT</a
+          >
+        </li>
+        <li class="hero-list-item">
+          <a
+            class="hero-social-link hero-github"
+            href="https://github.com/mogilevs/project4"
+            target="blank_"
+            >GH</a
+          >
+        </li>
+        <li class="hero-list-item">
+          <a
+            class="hero-social-link hero-email"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="aboutme-section" id="aboutme-id">
+      <div class="container">
+        <h2 class="visually-hidden">About me</h2>
+<div class="aboutme-top-wrap">
+  <p class="aboutme-text">
+    I work with people all over the world to create impressive and
+    <span class="aboutme-accent-one">functional</span>
+    <span class="aboutme-accent-two">websites</span> that reflect each client's
+    unique personality.
+  </p>
+  <div class="aboutme-image"></div>
+</div>
+
+        <ul class="aboutme-accordion-section accordion-container-abm">
+  <li class="accordion ac">
+    <div data-tab="tab-1" class="accordion-title ac-header">
+      <h3 class="acc-1">
+        <button class="down-icons ac-trigger">
+          <span class="sp-text">about me</span>
+          <span class="sp-icons">
+            <svg class="icons active-up">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+            </svg>
+          </span>
+        </button>
+      </h3>
+    </div>
+
+    <div id="tab-1" class="accordion-content ac-panel">
+      <ul class="content-first ac-text">
+        <li>
+          I am Lloyd Jefferson, a talented programmer with extensive expertise
+          in software development. I have an understanding of different
+          programming languages and technologies, always ready to improve my
+          skills. I always follow the latest trends and look for unconventional,
+          creative solutions to problems. I have a high level of analytical
+          skills and am able to effectively solve even the most difficult tasks
+          encountered on the way.
+        </li>
+
+        <li>
+          <span class="new-p">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work.</span
+          >
+
+          I am always looking for opportunities for self-improvement. I actively
+          study new technologies and practices to stay abreast of the latest
+          innovations. I have a strong understanding of various programming
+          languages, frameworks and architectural concepts that allow me to
+          create efficient and scalable software.
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li class="accordion ac">
+    <div data-tab="tab-2" class="accordion-title acc-2 ac-header">
+      <h3>
+        <button class="down-icons ac-trigger">
+          <span class="sp-text">role</span>
+          <span class="sp-icons">
+            <svg class="icons">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+            </svg>
+          </span>
+        </button>
+      </h3>
+    </div>
+    <div id="tab-2" class="accordion-content ac-panel">
+      <ul class="content-second ac-text">
+        <li>Frontend development</li>
+        <li>HeadlessCMS,Wordpress</li>
+        <li>Blender(enjoy)</li>
+      </ul>
+    </div>
+  </li>
+
+  <li class="accordion ac">
+    <div data-tab="tab-3" class="accordion-title acc-3 ac-header">
+      <h3>
+        <button class="down-icons ac-trigger">
+          <span class="sp-text">education</span>
+          <span class="sp-icons">
+            <svg class="icons">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+            </svg>
+          </span>
+        </button>
+      </h3>
+    </div>
+
+    <div id="tab-3" class="accordion-content ac-panel">
+      <ul class="content-next ac-text">
+        <li>
+          2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+        </li>
+        <li>
+          2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+          NewYork
+        </li>
+        <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+
+        <div class="aboutme-container-swiper">
+  <div class="aboutme-swiper-wrapper swiper">
+    <ul class="aboutme-swiper-list swiper-wrapper">
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">HTML/CSS</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">JavaScript</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">React</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">Node. js</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">React Native</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">Soft skills</p>
+      </li>
+      <!--Додатковий комплект елементів-->
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">HTML/CSS</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">JavaScript</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">React</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">Node. js</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">React Native</p>
+      </li>
+      <li class="aboutme-swiper-item swiper-slide">
+        <p class="aboutme-swiper-text">Soft skills</p>
+      </li>
+    </ul>
+  </div>
+  <div class="aboutme-swiper-button-wrap">
+    <button type="button" class="aboutme-swiper-btn" aria-label="next">
+      <svg class="aboutme-swiper-icon">
+        <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-aboutme-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+      </div>
+    </section>
+    <section class="benefits" id="benefits">
+  <div class="container benefits-container">
+    <h2 class="benefits-title">Benefits of working with me</h2>
+    <div class="benefits-list-link">
+      <ul class="benefits-list">
+        <li class="benefits-item">
+          <div class="benefits-item-svg-container">
+            <svg class="benefits-item-svg" width="24" height="24">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-subtitle">Expertise</h3>
+          <p class="benefits-item-text">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
+        </li>
+
+        <li class="benefits-item">
+          <div class="benefits-item-svg-container">
+            <svg class="benefits-item-svg" width="24" height="24">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-message-chat"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-subtitle">Communication</h3>
+          <p class="benefits-item-text">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </li>
+
+        <li class="benefits-item">
+          <div class="benefits-item-svg-container">
+            <svg class="benefits-item-svg" width="24" height="24">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-subtitle">Art</h3>
+          <p class="benefits-item-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+
+        <li class="benefits-item">
+          <div class="benefits-item-svg-container">
+            <svg class="benefits-item-svg" width="24" height="24">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-subtitle">Urgent execution</h3>
+          <p class="benefits-item-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+      <a class="benefits-button-link" href="#work-together" aria-label="button-takes-you-to-order-form"
+        >Order the project</a
+      >
+    </div>
+  </div>
+</section>
+
+    <section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="projects-title">Projects</h2>
+    <div class="swiper-container projects-swiper-container">
+      <div class="swiper projects-swiper">
+        <ul class="swiper-wrapper projects-swiper-slide">
+          <li class="swiper-slide">
+            <div class="swiper-item">
+              <div class="project-card">
+                <ul class="content-list">
+                  <li class="content">#react</li>
+                  <li class="content">#js</li>
+                  <li class="content">#node.js</li>
+                  <li class="content">#git</li>
+                </ul>
+                <h3 class="programming">
+                  Programming Across Borders: Ideas, Technologies, Innovations
+                </h3>
+                <a
+                  href="https://mogilevs.github.io/project4/"
+                  target="_blank"
+                  class="see-projects-desk"
+                  >See projects</a
+                >
+              </div>
+              <div class="project-slide">
+                <img
+                  srcset="/js_106_mogilevs/assets/expand.x2.desktop-34de4598.jpg 2x, /js_106_mogilevs/assets/expand.x1.desktop-8b48d2e9.jpg 1x"
+                  src="/js_106_mogilevs/assets/expand.x1.desktop-8b48d2e9.jpg"
+                  alt="expand your mind, reading a book"
+                  class="project-image-one"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="swiper-item">
+              <div class="project-card">
+                <ul class="content-list">
+                  <li class="content">#react</li>
+                  <li class="content">#js</li>
+                  <li class="content">#node.js</li>
+                  <li class="content">#git</li>
+                </ul>
+                <h3 class="programming">
+                  Programming Across Borders: Ideas, Technologies, Innovations
+                </h3>
+                <a
+                  href="https://mogilevs.github.io/project4/"
+                  target="_blank"
+                  class="see-projects-desk"
+                  >See projects</a
+                >
+              </div>
+              <div class="project-slide">
+                <img
+                  srcset="/js_106_mogilevs/assets/pets.x2.desktop-c5218006.jpg 2x, /js_106_mogilevs/assets/pets.x1.desktop-53cf6ee9.jpg 1x"
+                  src="/js_106_mogilevs/assets/pets.x1.desktop-53cf6ee9.jpg"
+                  alt="woman with a dog"
+                  class="project-image-two"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="swiper-item">
+              <div class="project-card">
+                <ul class="content-list">
+                  <li class="content">#react</li>
+                  <li class="content">#js</li>
+                  <li class="content">#node.js</li>
+                  <li class="content">#git</li>
+                </ul>
+                <h3 class="programming">
+                  Programming Across Borders: Ideas, Technologies, Innovations
+                </h3>
+                <a
+                  href="https://mogilevs.github.io/project4/"
+                  target="_blank"
+                  class="see-projects-desk"
+                  >See projects</a
+                >
+              </div>
+              <div class="project-slide">
+                <img
+                  srcset="/js_106_mogilevs/assets/register.x2desktop-0c7db43a.jpg 2x, /js_106_mogilevs/assets/register.x1.desktop-5f974d56.jpg 1x"
+                  src="/js_106_mogilevs/assets/register.x1.desktop-5f974d56.jpg"
+                  alt="register"
+                  class="project-image-three"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-buttons">
+          <div class="swiper-btn-prev">
+            <svg class="turn-left" width="25" height="24">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="swiper-btn-next">
+            <svg class="turn-right" width="25" height="24">
+              <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="faq-section" id="faq-section-id">
+  <div class="faq-container container">
+    <h2 class="faq-title">faq</h2>
+    <ul class="faq-list accordion-container-faq">
+      <li class="faq-list-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger" aria-label="open answer to question">
+            <span class="faq-question-text">
+              What programming languages are most often used in your
+              project?</span
+            >
+            <span class="faq-show-text-button">
+              <svg class="faq-icon" width="20" height="20">
+                <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+
+        <div class="ac-panel">
+          <p class="faq-hide-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-list-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger" aria-label="open answer to question">
+            <span class="faq-question-text">
+              What are the deadlines for the project?</span
+            >
+            <span class="faq-show-text-button">
+              <svg class="faq-icon" width="20" height="20">
+                <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+
+        <div class="ac-panel">
+          <p class="faq-hide-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-list-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger" aria-label="open answer to question">
+            <span class="faq-question-text">
+              What payment methods do you accept?</span
+            >
+            <span class="faq-show-text-button">
+              <svg class="faq-icon" width="20" height="20">
+                <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+
+        <div class="ac-panel">
+          <p class="faq-hide-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="faq-list-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger" aria-label="open answer to question">
+            <span class="faq-question-text"> How can I contact you?</span>
+            <span class="faq-show-text-button">
+              <svg class="faq-icon" width="20" height="20">
+                <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+
+        <div class="ac-panel">
+          <p class="faq-hide-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-list-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger" aria-label="open answer to question">
+            <span class="faq-question-text">
+              Do you provide advice or support?</span
+            >
+            <span class="faq-show-text-button">
+              <svg class="faq-icon" width="20" height="20">
+                <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+
+        <div class="ac-panel">
+          <p class="faq-hide-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-list-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger" aria-label="open answer to question">
+            <span class="faq-question-text">
+              What does the process of developing a software product look like
+              from idea to implementation?</span
+            >
+            <span class="faq-show-text-button">
+              <svg class="faq-icon" width="20" height="20">
+                <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+
+        <div class="ac-panel">
+          <p class="faq-hide-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="covers">
+  <h2 class="visually-hidden">Covers</h2>
+  <div class="container covers-container">
+    <ul class="covers-list">
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image1-b7a757bf.jpg"
+          alt="StarlightStudio"
+          srcset="/js_106_mogilevs/assets/image1-b7a757bf.jpg 1x, /js_106_mogilevs/assets/image1_2x-4968dab0.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image2-7a98f03e.jpg"
+          alt="English Excelence"
+          srcset="/js_106_mogilevs/assets/image2-7a98f03e.jpg 1x, /js_106_mogilevs/assets/image2_2x-70070bb1.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image3-862346ca.jpg"
+          alt="Fruibox"
+          srcset="/js_106_mogilevs/assets/image3-862346ca.jpg 1x, /js_106_mogilevs/assets/image3_2x-60db19aa.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image4-ccf2c036.jpg"
+          alt="Energy Flow"
+          srcset="/js_106_mogilevs/assets/image4-ccf2c036.jpg 1x, /js_106_mogilevs/assets/image4_2x-516f3eec.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image9-8f631eec.jpg"
+          alt="Mimino"
+          srcset="/js_106_mogilevs/assets/image9-8f631eec.jpg 1x, /js_106_mogilevs/assets/image9_2x-1b817034.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+    </ul>
+    <ul class="covers-list">
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image4-ccf2c036.jpg"
+          alt="Energy Flow"
+          srcset="/js_106_mogilevs/assets/image4-ccf2c036.jpg 1x, /js_106_mogilevs/assets/image4_2x-516f3eec.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image5-62dd3621.jpg"
+          alt="Jewerly"
+          srcset="/js_106_mogilevs/assets/image5-62dd3621.jpg 1x, /js_106_mogilevs/assets/image5_2x-5457354c.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image6-a0202934.jpg"
+          alt="Wallet"
+          srcset="/js_106_mogilevs/assets/image6-a0202934.jpg 1x, /js_106_mogilevs/assets/image6_2x-87a8443f.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image7-a2e9f5da.jpg"
+          alt="Green Harvest"
+          srcset="/js_106_mogilevs/assets/image7-a2e9f5da.jpg 1x, /js_106_mogilevs/assets/image7_2x-d74d8d4e.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image6-a0202934.jpg"
+          alt="Wallet"
+          srcset="/js_106_mogilevs/assets/image6-a0202934.jpg 1x, /js_106_mogilevs/assets/image6_2x-87a8443f.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+    </ul>
+    <ul class="covers-list">
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image8-7c783572.jpg"
+          alt="Ukrainian artistry"
+          srcset="/js_106_mogilevs/assets/image8-7c783572.jpg 1x, /js_106_mogilevs/assets/image8_2x-fccb7a99.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image9-8f631eec.jpg"
+          alt="Mimino"
+          srcset="/js_106_mogilevs/assets/image9-8f631eec.jpg 1x, /js_106_mogilevs/assets/image9_2x-1b817034.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image10-d6e7f3ee.jpg"
+          alt="Power pulse"
+          srcset="/js_106_mogilevs/assets/image10-d6e7f3ee.jpg 1x, /js_106_mogilevs/assets/image10_2x-00390b56.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image1-b7a757bf.jpg"
+          alt="StarlightStudio"
+          srcset="/js_106_mogilevs/assets/image1-b7a757bf.jpg 1x, /js_106_mogilevs/assets/image1_2x-4968dab0.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image1-b7a757bf.jpg"
+          alt="StarlightStudio"
+          srcset="/js_106_mogilevs/assets/image1-b7a757bf.jpg 1x, /js_106_mogilevs/assets/image1_2x-4968dab0.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+    </ul>
+    <ul class="covers-list">
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image1-b7a757bf.jpg"
+          alt="StarlightStudio"
+          srcset="/js_106_mogilevs/assets/image1-b7a757bf.jpg 1x, /js_106_mogilevs/assets/image1_2x-4968dab0.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image2-7a98f03e.jpg"
+          alt="English Excelence"
+          srcset="/js_106_mogilevs/assets/image2-7a98f03e.jpg 1x, /js_106_mogilevs/assets/image2_2x-70070bb1.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image3-862346ca.jpg"
+          alt="Fruibox"
+          srcset="/js_106_mogilevs/assets/image3-862346ca.jpg 1x, /js_106_mogilevs/assets/image3_2x-60db19aa.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+      <li class="covers-item">
+        <img
+          src="/js_106_mogilevs/assets/image10-d6e7f3ee.jpg"
+          alt="Power pulse"
+          srcset="/js_106_mogilevs/assets/image10-d6e7f3ee.jpg 1x, /js_106_mogilevs/assets/image10_2x-00390b56.jpg 2x"
+          loading="lazy"
+          class="covers-image"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="review-section">
+  <div class="container">
+    <h2>Reviews</h2>
+    <div class="slider-container review-slider-container">
+      <div class="swiper-container review-swiper-container">
+        <div class="swiper review-swiper">
+          <ul class="swiper-wrapper js-reviews-list"></ul>
+        </div>
+      </div>
+      <div class="button-control" id="custom-control">
+        <button
+          type="button"
+          class="button-prev swiper-button-lock"
+          aria-label="Previous slider review"
+        >
+          <svg class="arrow-icon">
+            <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="button-next swiper-button-lock"
+          aria-label="Next slider review"
+        >
+          <svg class="arrow-icon">
+            <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="go-top">
+    <svg class="faq-icon" width="40" height="40">
+    <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-scroll-arrow"></use>
+</svg>
+</div>
+    <footer class="footer-section" id="work-together">
+  <div class="footer-container container">
+    <h2 class="footer-text">
+      <picture>
+        <source
+          srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIACwALAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAHAgYICQMEBQH/2gAIAQEAAAAAms0AUo1FoeN0XDeQLi6ugP4/So3W4DgAUZi466QMvC7bZnLTRwPZr2Qf/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgQFAP/aAAgBAhAAAAAJVM5j7GH/xAAYAQEAAwEAAAAAAAAAAAAAAAAFAAEDAv/aAAgBAxAAAADVkamR8J1//8QAMRAAAgIBAwIFAAgHAAAAAAAAAQIDBAYABREHEhMUITFBCBUyM1NhYqEQIkJRUpGx/9oACAEBAAE/AN33aXxXrVXKKp4Z19ydXLEdeGa1alCxRI0kjsfQKo5JOn6yUN2v2aONxrJDAjs9mYEB+38MaTqn9UPAmTV+YJSALUEZXs5HPLI3uNbXvE0UcF3bbnMMqLIhU8xujDkHj2IOtp3OHcKKWBwjAlHXn2YacliWJ5JPJ1k9Bd02DeKDe01WRf251geC0NnqES1oJSyEO/ABDjXUfY69iWSJN1r+H6cJ3gBDzrGNtO043se3eN43l6UKeJ/fhdRWZYVKoxAJ50Tq7XS7UsVHYqJUK8j41PhuyXdpejdo1Zboiki88qKkhf1Ut3JwR+Y1kWM4/V8rRamV3H608SBVk7ln73AYy88N2jj+ReNbbtlba4p0grQwGeYzyJAoVO8qF9AAPhfU/J0ffWX9S8KwZ4Icl3tK9iYBkgSN5pe3/IrGDwNZD9KnFaps1sa2W7fsAERTWeK8Bb93I1jXXvMcbvXZbUse57fdty25IJ/eJ5273MLD7IJ/p1i2f45m+cY6/m6tDwZmtztdeKANIHDBE7/tueOBpm7+GQgqfUEex/h122/ett6m5dBkKP5hrkkldj7PUb7gp+ns1Iw7uRrv7xwfn/umTj/ZGsYzfLMOu1r+wb1ZgMR+5LloJB8q8Z9CNdKpZOoWC7Hl1ujJt8l+Mt4D/oPYXT9DEcrrqf0owzqZtHg5LRfzNOJzVvVnEVqD8lbggj8mBGsv2itsWR7rtVR5HgrzuiNKQXIB+SoA0vtqX7wjX0ZeiODZ9DPkOUw27hoPEyUjKFqSl/xQAGOoYYq8UUEESRwxoqRxooVVVRwFUD2A1//EAB4RAAICAgIDAAAAAAAAAAAAAAECAxEAEDFRBBIh/9oACAECAQE/AHNKSOsbyJVZXs0TisaBOFfcEEfCKyaCaOSJEDFeLHWr40QM/8QAHxEBAQABBAIDAAAAAAAAAAAAAQIDAAQQESExE0Fx/9oACAEDAQE/AIBqR9KGo2eG5uAO5Perk7Q+nRfx0UV1Uon6a2282+TFnyZWS3yy+O3gOl4F1//Z 1x, data:image/jpeg;base64,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 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="data:image/jpeg;base64,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 1x, /js_106_mogilevs/assets/image-tab-2x-min-6dbbaaab.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="footer-img"
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIACwALAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAHAgYICQMEBQH/2gAIAQEAAAAAms0AUo1FoeN0XDeQLi6ugP4/So3W4DgAUZi466QMvC7bZnLTRwPZr2Qf/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgQFAP/aAAgBAhAAAAAJVM5j7GH/xAAYAQEAAwEAAAAAAAAAAAAAAAAFAAEDAv/aAAgBAxAAAADVkamR8J1//8QAMRAAAgIBAwIFAAgHAAAAAAAAAQIDBAYABREHEhMUITFBCBUyM1NhYqEQIkJRUpGx/9oACAEBAAE/AN33aXxXrVXKKp4Z19ydXLEdeGa1alCxRI0kjsfQKo5JOn6yUN2v2aONxrJDAjs9mYEB+38MaTqn9UPAmTV+YJSALUEZXs5HPLI3uNbXvE0UcF3bbnMMqLIhU8xujDkHj2IOtp3OHcKKWBwjAlHXn2YacliWJ5JPJ1k9Bd02DeKDe01WRf251geC0NnqES1oJSyEO/ABDjXUfY69iWSJN1r+H6cJ3gBDzrGNtO043se3eN43l6UKeJ/fhdRWZYVKoxAJ50Tq7XS7UsVHYqJUK8j41PhuyXdpejdo1Zboiki88qKkhf1Ut3JwR+Y1kWM4/V8rRamV3H608SBVk7ln73AYy88N2jj+ReNbbtlba4p0grQwGeYzyJAoVO8qF9AAPhfU/J0ffWX9S8KwZ4Icl3tK9iYBkgSN5pe3/IrGDwNZD9KnFaps1sa2W7fsAERTWeK8Bb93I1jXXvMcbvXZbUse57fdty25IJ/eJ5273MLD7IJ/p1i2f45m+cY6/m6tDwZmtztdeKANIHDBE7/tueOBpm7+GQgqfUEex/h122/ett6m5dBkKP5hrkkldj7PUb7gp+ns1Iw7uRrv7xwfn/umTj/ZGsYzfLMOu1r+wb1ZgMR+5LloJB8q8Z9CNdKpZOoWC7Hl1ujJt8l+Mt4D/oPYXT9DEcrrqf0owzqZtHg5LRfzNOJzVvVnEVqD8lbggj8mBGsv2itsWR7rtVR5HgrzuiNKQXIB+SoA0vtqX7wjX0ZeiODZ9DPkOUw27hoPEyUjKFqSl/xQAGOoYYq8UUEESRwxoqRxooVVVRwFUD2A1//EAB4RAAICAgIDAAAAAAAAAAAAAAECAxEAEDFRBBIh/9oACAECAQE/AHNKSOsbyJVZXs0TisaBOFfcEEfCKyaCaOSJEDFeLHWr40QM/8QAHxEBAQABBAIDAAAAAAAAAAAAAQIDAAQQESExE0Fx/9oACAEDAQE/AIBqR9KGo2eG5uAO5Perk7Q+nRfx0UV1Uon6a2282+TFnyZWS3yy+O3gOl4F1//Z"
+          alt="Profile"
+        /> </picture
+      >Let&prime;s&nbsp;<span class="footer-text-span">work</span
+      ><span class="footer-text-bottom">together</span>
+    </h2>
+    <form class="footer-form js-submit-form">
+      <div class="footer-input-container">
+        <input
+          class="footer-input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+        <span class="message success" id="successMessage">Success!</span>
+        <span class="message error" id="errorMessage"
+          >Invalid email, try again</span
+        >
+      </div>
+      <div class="footer-input-container">
+        <input
+          id="comments"
+          class="footer-input"
+          name="footer comments"
+          type="text"
+          placeholder="comments"
+        />
+        <button class="footer-btn-send" type="submit">Send</button>
+      </div>
+    </form>
+    <address>
+      <ul class="footer-contacts">
+        <li class="footer-contacts-item">
+          <a class="link-info" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="footer-contacts-item">
+          <a class="link-info" href="tel:+38011111111111">+380 11 1111 11 11</a>
+        </li>
+      </ul>
+    </address>
+  </div>
+</footer>
+<div class="backdrop">
+  <div class="modal">
+    <button
+      type="button"
+      class="modal-close-btn"
+      aria-label="closing-modal-window"
+    >
+      <svg class="modal-icon">
+        <use href="/js_106_mogilevs/assets/icons-cb491ee8.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="titel-modal">Thank you for your interest in cooperation!</h2>
+    <p class="text-modal">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    
+  </body>
+</html>
