@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project4/",
+    "build": "vite build --base=/js_106_mogilevs/",
     "preview": "vite preview"
   },
   "devDependencies": {
